@@ -20,116 +20,40 @@
         <div class="sidebar-inner">
             <div class="sidebar-menu">
                 <mat-accordion>
-                    <span class="sub-title gray-color">MAIN</span>
-                    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = true">
-                        <mat-expansion-panel-header>
-                            <mat-panel-title>
-                                <i class="flaticon-menu-1"></i>
-                                <span class="title">Dashboard</span>
-                                <span class="badge">7</span>
-                            </mat-panel-title>
-                        </mat-expansion-panel-header>
-                        <ul class="sidebar-sub-menu">
-                            <li class="sidemenu-item">
-                                <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link">
-                                    eCommerce
-                                </a>
-                            </li>
-                            <li class="sidemenu-item">
-                                <a routerLink="/analytics" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link">
-                                    Analytics
-                                </a>
-                            </li>
-                            <li class="sidemenu-item">
-                                <a routerLink="/project-management" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link">
-                                    Project Management
-                                </a>
-                            </li>
-                            <li class="sidemenu-item">
-                                <a routerLink="/lms-courses" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link">
-                                    LMS Courses
-                                </a>
-                            </li>
-                            <li class="sidemenu-item">
-                                <a routerLink="/crypto" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link">
-                                    Crypto <span class="badge">New</span>
-                                </a>
-                            </li>
-                            <li class="sidemenu-item">
-                                <a routerLink="/help-desk" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link">
-                                    Help/Support Desk <span class="badge">New</span>
-                                </a>
-                            </li>
-                            <li class="sidemenu-item">
-                                <a routerLink="/saas-app" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link">
-                                    SaaS App <span class="badge">New</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </mat-expansion-panel>
-                    <span class="sub-title gray-color">APPS</span>
-                    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = true">
-                        <mat-expansion-panel-header>
-                            <mat-panel-title>
-                                <i class="flaticon-layer"></i>
-                                <span class="title">File Manager</span>
-                                <span class="badge three">3</span>
-                            </mat-panel-title>
-                        </mat-expansion-panel-header>
-                        <ul class="sidebar-sub-menu">
-                            <li class="sidemenu-item">
-                                <a routerLink="/file-manager" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link">
-                                    My Drive
-                                </a>
-                            </li>
-                            <li class="sidemenu-item">
-                                <a routerLink="/file-manager/assets" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link">
-                                    Assets
-                                </a>
-                            </li>
-                            <li class="sidemenu-item">
-                                <a routerLink="/file-manager/projects" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link">
-                                    Projects
-                                </a>
-                            </li>
-                            <li class="sidemenu-item">
-                                <a routerLink="/file-manager/personal" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link">
-                                    Personal
-                                </a>
-                            </li>
-                            <li class="sidemenu-item">
-                                <a routerLink="/file-manager/templates" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link">
-                                    Templates
-                                </a>
-                            </li>
-                            <li class="sidemenu-item">
-                                <a routerLink="/file-manager/documents" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link">
-                                    Documents
-                                </a>
-                            </li>
-                            <li class="sidemenu-item">
-                                <a routerLink="/file-manager/media" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link">
-                                    Media
-                                </a>
-                            </li>
-                            <li class="sidemenu-item">
-                                <a routerLink="/file-manager/recent-files" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="sidemenu-link">
-                                    Recent Files
-                                </a>
-                            </li>
-                        </ul>
-                    </mat-expansion-panel>
+               
+                    <span class="sub-title gray-color">Configuración</span>
+       
                     <a routerLink="/to-do-list" class="sidebar-menu-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
                         <i class="flaticon-to-do-list"></i>
-                        <span class="title">To Do List</span>
+                        <span class="title">Datos del centro</span>
                     </a>
+                    <a routerLink="/to-do-list" class="sidebar-menu-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                        <i class="flaticon-to-do-list"></i>
+                        <span class="title">Cursos escolares</span>
+                    </a>
+                    <a routerLink="/to-do-list" class="sidebar-menu-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                        <i class="flaticon-to-do-list"></i>
+                        <span class="title">Planes de estudio</span>
+                    </a>
+                
+                 
+                    <span class="sub-title gray-color">Alumnado</span>
+
                     <a routerLink="/calendar" class="sidebar-menu-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
                         <i class="flaticon-calendar"></i>
-                        <span class="title">Calendar</span>
+                        <span class="title">Expediente</span>
+                    </a>
+                    <a routerLink="/to-do-list" class="sidebar-menu-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                    <i class="flaticon-to-do-list"></i>
+                    <span class="title">Grupos</span>
                     </a>
                     <a routerLink="/contacts" class="sidebar-menu-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
                         <i class="flaticon-user-1"></i>
-                        <span class="title">Contacts</span>
+                        <span class="title">Matrículas</span>
+                    </a>
+                    <a routerLink="/contacts" class="sidebar-menu-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+                        <i class="flaticon-user-1"></i>
+                        <span class="title">Neaes</span>
                     </a>
                     <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = true">
                         <mat-expansion-panel-header>
@@ -911,6 +835,7 @@
                             </ul>
                         </mat-accordion>
                     </mat-expansion-panel>
+                  
                 </mat-accordion>
             </div>
         </div>
